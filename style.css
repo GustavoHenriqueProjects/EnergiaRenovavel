@@ -21,6 +21,7 @@ body{
 
 .cabecalho-logo{
     height: 80px;
+    
 }
 
 .cabecalho-pesquisa-menu{
@@ -139,4 +140,69 @@ body{
     display: flex;
     justify-content: center;
 
+}
+
+@media(max-width:960px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho-logo {
+        display: inline-flex;
+    }
+
+    .conteudo-principal-imagem{
+        display:inline-flex;
+        width: 40vw;
+        height: 40vw;
+        
+    }
+
+   .conteudo-principal-escrito-titulo{
+    font-size: 6vw;
+   }
+
+}
+
+@media(max-width:640px){
+    main{
+        flex-grow:1;
+    }
+
+    .cabecalho-logo {
+        display: inline-flex;
+        height:10vw;
+    }
+
+    .cabecalho-pesquisa-menu{
+       display: inline-flex;
+    }
+
+    .conteudo-principal-imagem{
+        display:inline-flex;
+        width: 40vw;
+        height: 40vw;
+        
+    }
+
+   .conteudo-principal-escrito-titulo{
+    font-size: 6vw;
+   }
+
+   .conteudo-secundario-titulo{
+    font-size: 6vw;
+   }
+
+   .conteudo-principal-escrito-subtitulo{
+    font-size: 4vw;
+   }
+   .conteudo-secundario-paragrafo{
+    font-size: 4vw;
+   }
+   .conteudo-principal-escrito-botao{
+    font-size: 3vw;
+    width: 20vw;
+    height: 10vw;
+   }
+ 
 }
